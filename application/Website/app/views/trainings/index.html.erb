@@ -1,0 +1,54 @@
+<div class="works-hedding">
+<h3>List of trainings</h3>
+<%= link_to 'New training', new_training_path, :class=>"nice_button" %></li>
+<div class="clearfix"></div>
+<!-- <table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th colspan="2"></th>
+  </tr>
+
+  <% @trainings.each do |training| %>
+  <tr>
+    <td><%= training.title %></td>
+    <td><%= training.text %></td>
+    <td><%= link_to 'Show', training_path(training) %></td>
+    <td><%= link_to 'Edit', edit_training_path(training) %></td>
+    <td><%= link_to 'Destroy', training_path(training),
+    method: :delete, data: { confirm: 'Czy jestes pewny?' } %></td>
+  </tr>
+
+
+
+  <% end %>
+</table> -->
+</div>
+<div id="portfoliolist" >
+
+
+  <% @trainings.each do |training| %>
+  <div class="portfolio card mix_all" style="display:inline-block; opacity:1;" data-cat="card">
+
+  <div class="portfolio-wrapper">
+    <div class="b-link-stripe" href="#">
+      <div class="b-wrapper">
+        <a href="<%= training_path(training) %>">
+          <h2 class="b-animate-b-from-left"><%= training.title %></h2>
+          <p class="b-animate-b-from-left"><%= training.text %></p><br/>
+        </a>
+          <p class="b-animaate-b-from-left">   
+                <%= link_to 'Edit', edit_training_path(training) %>
+                <%= link_to 'Destroy', training_path(training),    method: :delete, data: { confirm: 'Czy jestes pewny?' } %></p>
+      </div>
+    </div>
+
+</div>
+
+
+</div>
+
+  <% end %>
+
+
+</div>

@@ -1,0 +1,17 @@
+Thu, 29 Jan 2015 19:23:01 +0100
+README.rdoc	Mon, 08 Dec 2014 19:11:46 +0100
+app/controllers/application_controller.rb	Mon, 08 Dec 2014 19:11:46 +0100
+app/controllers/trainings_controller.rb	Thu, 29 Jan 2015 19:22:55 +0100
+app/controllers/user/confirmations_controller.rb	Mon, 08 Dec 2014 21:49:00 +0100
+app/controllers/user/omniauth_callbacks_controller.rb	Mon, 08 Dec 2014 21:27:34 +0100
+app/controllers/user/passwords_controller.rb	Mon, 08 Dec 2014 21:48:43 +0100
+app/controllers/user/registrations_controller.rb	Mon, 08 Dec 2014 21:48:44 +0100
+app/controllers/user/sessions_controller.rb	Mon, 08 Dec 2014 21:49:10 +0100
+app/controllers/user/unlocks_controller.rb	Mon, 08 Dec 2014 21:49:26 +0100
+app/controllers/welcome_controller.rb	Mon, 08 Dec 2014 19:16:22 +0100
+app/helpers/application_helper.rb	Mon, 08 Dec 2014 19:11:46 +0100
+app/helpers/trainigs_helper.rb	Mon, 08 Dec 2014 19:25:28 +0100
+app/helpers/trainings_helper.rb	Mon, 08 Dec 2014 19:25:51 +0100
+app/helpers/welcome_helper.rb	Mon, 08 Dec 2014 19:16:22 +0100
+app/models/training.rb	Mon, 08 Dec 2014 20:02:32 +0100
+app/models/user.rb	Mon, 08 Dec 2014 21:01:19 +0100

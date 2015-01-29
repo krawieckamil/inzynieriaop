@@ -1,0 +1,14 @@
+<div class="trening-info">
+  <h2>
+  <%= @training.title %>
+</h2>
+
+<h3>
+  <%= @training.text %>
+</h3>
+</div>
+
+<div class="trening-info-nav">
+<%= link_to 'Back', trainings_path, :class=>"nice_button" %>
+<%= link_to 'Edit', edit_training_path(@training), :class=>"nice_button" %>
+</div>
