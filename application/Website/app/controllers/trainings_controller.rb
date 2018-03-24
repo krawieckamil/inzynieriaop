@@ -1,6 +1,8 @@
 # Class with all trainings methods
 class TrainingsController < ApplicationController
 
+before_action :authenticate_user!
+
 # Define new training
 def new
 @training = Training.new

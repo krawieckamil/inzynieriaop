@@ -15,7 +15,7 @@
     <div class="container">
       <div class="header-top">
         <div class="header-logo">
-          <h1><%= link_to 'PROJEKT TRENINGI', root_path %></h1>
+          <h1><%= link_to 'FitActivity', root_path %></h1>
         </div>
         <div class="top-nav">
           <span class="menu"><%= image_tag("menu.png") %></span>
@@ -34,60 +34,51 @@
   </div>
   <!-- container -->
 
-  <!--
-  <div class="banner">
-    container
-    <div class="container">
-      <div class="banner-info ">
-        <a class="play-icon">
-          <span> </span>
-        </a>
-        <div class="banner-text">
-          <h2>Let me show you a few things.</h2>
-        </div>
-        </div>
-      </div>
-     container
-  </div>
- banner -->
 
-  <p class="notice">    <%=notice %>  </p>
+
+
+  <% if flash[:notice] %>
+   <p class="notice">    <%=notice %>  </p>
+  <% end %>
+
+<% if flash[:alert] %>
   <p class="alert">    <%=alert %>  </p>
-<!-- services -->
-  <div id="services" class="services">
-    <div class="container">
-      <%= yield %>
-  </div>
-  </div>
-  <!-- services -->
+<% end %>
+
+<!-- dynamic data -->
+  <%= yield %>
+<!-- end of dynamic data -->
+
   <!-- icons -->
-  <div class="icons">
-    <!-- container -->
-    <div class="container">
-      <ul class="wow bounceIn" data-wow-delay="0.4s">
-        <li>
-          <span class="light"> </span>
-        </li>
-        <li>
-          <span class="glob"> </span>
-        </li>
-        <li>
-          <span class="camra"> </span>
-        </li>
-        <li>
-          <span class="setting"> </span>
-        </li>
-        <li>
-          <span class="mike"> </span>
-        </li>
-        <li>
-          <span class="money"> </span>
-        </li>
-      </ul>
+  <div class="footer">
+    <div class="icons">
+      <!-- container -->
+      <div class="container">
+        <ul class="wow bounceIn" data-wow-delay="0.4s">
+          <li>
+            <span class="light"> </span>
+          </li>
+          <li>
+            <span class="glob"> </span>
+          </li>
+          <li>
+            <span class="camra"> </span>
+          </li>
+          <li>
+            <span class="setting"> </span>
+          </li>
+          <li>
+            <span class="mike"> </span>
+          </li>
+          <li>
+            <span class="money"> </span>
+          </li>
+        </ul>
+      </div>
+      <!-- container -->
     </div>
-    <!-- container -->
-  </div>
-  <!-- icons -->
+    <!-- icons -->
+</div>
 </body>
 
 </html>

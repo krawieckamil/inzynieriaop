@@ -4,20 +4,14 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
 html,body {
 	font-family: 'Open Sans', sans-serif;
-	background:#000;
-	color: #fff;
-
+	color: #000;
 }
 /*---- heder ----*/
-.header{
-	background:#000;
-}
-.container{
-	width:85%;
-	margin:0 auto;
-}
+
 .header-logo{
 	float:left;
 }
@@ -25,15 +19,16 @@ html,body {
 	margin: 21px 0;
 }
 .header-logo h1 a{
+	color: #000;
 	font-size:25px;
 	font-weight:700;
 	font-family: 'Open Sans', sans-serif;
-	color:#FFF;
 	text-decoration: none;
 }
 .top-nav {
 	float: right;
 	margin: .5em 0 0 8em;
+
 }
 .top-nav ul {
 	margin: 1.7em 0 0 0;
@@ -43,7 +38,7 @@ html,body {
 	display:inline-block;
 }
 .top-nav ul li a{
-	color: #FFF;
+		color: #000;
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
 	padding: 0 1em;
@@ -71,7 +66,6 @@ ul li a.Signup {
 }
 ul li a.Signup:hover{
 	border: #FFF solid 2px;
-	color: #FFF;
 	text-decoration:none;
 	transition:.5s all;
 	-webkit-transition:.5s all;
@@ -113,16 +107,22 @@ ul li a.Signup:hover{
 
 /*---- banner ----*/
 .banner{
-	background:url(1.jpg) no-repeat 0px 0px;
-	background-size: cover;
-	min-height: 668px;
+	min-height: 480px;
 	position:relative;
+	background:url(bg-banner.jpg) no-repeat 0px 0px;
+	background-size: cover;
+}
+.banner-img{
+  background: #000;
+	position:relative;
+	min-height: 480px;
+  opacity: 0.6;
+	display:flex;
+	align-items:center;
 }
 .banner-info{
-	position:absolute;
-	top: 38%;
-	right: 20%;
-	width: 53%;
+	color: #fff;
+	z-index: 1;
 }
 .banner-info a span{
 	background: url(play.png) no-repeat 0px 0px;
@@ -166,13 +166,15 @@ ul li a.Signup:hover{
 	float:left;
 }
 .banner-text{
-	float:right;
+	margin-left: 150px;
+	margin-top: 50px;
+	width: 450px;
 }
 /*---- services ----*/
 .services{
 	background:#42B8DD;
 	padding: 0 0 4em 0;
-	color: #fff;
+
 }
 .services-hedding h3{
 	font-size: 67px;
@@ -180,61 +182,7 @@ ul li a.Signup:hover{
 	font-weight: 700;
 	text-transform: uppercase;
 	margin: .7em 0;
-	color: #FFF;
 	border-bottom: 10px solid #FFF;
-}
-.col-md-3.img-grid {
-	padding: 0;
-}
-.services-info{
-	margin:3em 0 0 0;
-}
-.img-grid span
-{
-	background:url(service-img.png) no-repeat 0px 0px;
-	width:80px;
-	height:80px;
-	display:inline-block;
-	margin: 1em 0 0 0;
-	cursor:pointer;
-}
-.col-md-9.img-grid-text {
-	padding: 0;
-	margin: 1.4em 0 0 0;
-}
-.img-grid-text h4 {
-	color:#FFF;
-	font-family: 'Open Sans', sans-serif;
-	margin: 0 0 .5em 0;
-	font-size: 18px;
-	text-transform: uppercase;
-	text-decoration:none;
-}
-.img-grid-text h4 :hover{
-	color:#347083;
-	transition: .5s all;
-	-webkit-transition: .5s all;
-	-moz-transition: .5s all;
-	-o-transition: .5s all;
-	-ms-transition: .5s all;
-}
-.img-grid-text p{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	color: #FFF;
-	font-weight: 300;
-}
-.img-grid span.food
-{
-	background:url(service-img.png) no-repeat -176px 0px;
-}
-.img-grid span.power
-{
-	background:url(service-img.png) no-repeat -86px 0px;
-}
-.img-grid span.wood
-{
-	background:url(service-img.png) no-repeat -271px 0px;
 }
 /*---- icons ----*/
 .icons {
@@ -318,7 +266,6 @@ top: 2px;
 left: 0;
 text-align: center;
 margin: 4.75em 0 0 0;
-color: #fff;
 overflow: hidden;
 font-weight: bold;
 background: #347083;
@@ -1233,6 +1180,7 @@ h2.b-animate.b-from-left.b-delay03 {
 .col-md-8.text-fields {
 	padding: 0;
 }
+/*
 .text-field-email{
 
 	width: 48%;
@@ -1251,8 +1199,6 @@ h2.b-animate.b-from-left.b-delay03 {
 	width:100%;
 }
 input, textarea{
-	width: 100%;
-	padding: 1.5% 1.5% 1.5% 1.5%;
 	background:#EBEBEB;
 	color: #000 !important;
 	font-family: 'Open Sans', sans-serif;
@@ -1277,14 +1223,9 @@ input, textarea{
 	text-indent: 38px;
 	border: solid 2px #222;
 	min-height: 100px;
-}*/
+}
 form input[type="submit"] {
-	width: 100%;
-	padding: 1em 0;
 	margin-top: 1em;
-	background: url(tick.png) no-repeat 92px 29px #FFF;
-	text-align: center;
-	font-size: 26px;
 	color: #42B8DD;
 	outline: none;
 	border: none;
@@ -1296,14 +1237,13 @@ form input[type="submit"] {
 	-ms-border-radius: 8px;
 }
 form input[type="submit"]:hover{
-	background: url(tick.png) no-repeat 92px 29px #347083;
 	color: #fff;
 	transition: .5s all;
 	-webkit-transition: .5s all;
 	-moz-transition: .5s all;
 	-o-transition: .5s all;
 	-ms-transition: .5s all;
-}
+}*/
 .msg-img{
 	background: url(../images/icons1.png) no-repeat 0px 0px;
 	width: 18px;
@@ -1336,7 +1276,7 @@ form input[type="submit"]:hover{
 }
 /*---- footer ----*/
 .footer{
-	background:#252525;
+	background:#fff;
 	text-align:center;
 }
 .footer h4{
